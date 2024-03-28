@@ -6,46 +6,163 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML 5 Boilerplate</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Bundle with Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
   </head>
 
   <body>
-    <header>
-        <div class="header-home">
-            <h1>PlayPurity Wash</h1>
-        </div>
+    <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top d-none d-md-block" style="background-color: #e3f2fd !important;">
 
-        <nav>
-            <a href="/about">About Us</a>
-            <a href="/services">Our Services</a>
-            <a href="/appointment">Schedule Clean</a>
-        </nav>
-    </header>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Play Purity Wash</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Our Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">One Time Cleaning</a></li>
+                            <li><a class="dropdown-item" href="#">Monthly Cleaning</a></li>
+                            <li><a class="dropdown-item" href="#">Membership</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Contract Cleaning</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+
 
     <main>
-        <div class="home-main">
-            <div class="left-maincontainer">
-                <div class="left-info">
-                    <div class="left-heading">
-                        <h4> Clean. Safe. Play </h4>
-                        <h3>Cleaning and sanitizing playgrounds is our expertise, ensuring a healthy environment.</h3>
-                        <button>Contact Us</button>
-                    </div>
-                </div>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-
-            <div class="right-maincontainer">
-                <div class="right-info">
-                    <div class="right-playground"><img src=".././images/MainLogo.png" alt="Playground"></div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/images/CPic1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
                 </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/images/CPic2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+             
             </div>
-        
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
     </main>
+
+    <section>
+        <div class="about-home">
+            <h2> About Us </h2>
+            <div class="about-home-info">
+                <p>Our company specializes in the thorough cleaning and sanitization of playgrounds. Based in the Dallas-Fort Worth area, we cater to surrounding regions as well. Whether it's daycare facilities, city playgrounds, church compounds, or even residential play areas, we're equipped to sanitize and maintain them all. </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="services-home">
+            <h2> Our Services</h2>
+            <div class="card-container">  
+                <div class="card">
+                    <p> Card 1</p>
+                </div>
+                <div class="card">
+                    <p> Card 2</p>
+                </div>
+                <div class="card">
+                    <p> Card 3</p>
+                </div>
+                <div class="card">
+                    <p> Card 4</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="contact-home">
+            <h2> Contact Us</h2>
+            <div class="contact-container">
+                <form action="action_page.php">
+              
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="city">Location</label>
+                  <select id="city" name="city">
+                    <option value="dallas">Dallas</option>
+                    <option value="fortworth">Fort Worth</option>
+                    <option value="midcities">Mid-Cities</option>
+                  </select>
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-name">
+            <p>Purity Play Wash</p>
+        </div>
+        <div class="footer-info">
+            <p>Locations: Serving all of DFW</p>
+            <div class="footer-info-icons">
+                <p><i class="fa-brands fa-instagram"></i></p>
+                <p><i class="fa-brands fa-tiktok"></i></p>
+            </div>   
+        </div>
+    </footer>
 
 
 
     <!-- jQuery Carousel -->
+    <script src="https://kit.fontawesome.com/9cca0e9989.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/main.js"></script>
 
   </body>
