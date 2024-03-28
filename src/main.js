@@ -1,8 +1,12 @@
 console.log("main.js loaded");
 
-$(document).ready(function() {
-    for (var i = 0; i < 4; i++) {
-      var card = $('<div class="card">Card ' + (i + 1) + '</div>');
-      $('#card-container').append(card);
-    }
+$(document).ready(function(){
+  $('.nav-link').click(function(e){
+      e.preventDefault();
+      var targetId = $(this).data('target');
+      $('.nav-link').removeClass('active');
+      $(this).addClass('active');
+      $('.card-body').hide();
+      $('#' + targetId).show();
   });
+});

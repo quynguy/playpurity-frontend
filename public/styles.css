@@ -28,7 +28,6 @@ a {
 
 
 
-
 /* home.ejs main - carousel */
 
 
@@ -190,11 +189,17 @@ label.frequency {
 }
 
 
-.card {
+/* .card {
     width: 200px;
     height: 150px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
+} */
+
+
+section.services-container {
+    margin: 0 1rem;
+    background-color:rgb(191, 202, 191)
 }
 
 /* home.ejs contact */
