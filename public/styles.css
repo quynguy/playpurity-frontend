@@ -35,64 +35,138 @@ a {
 /* home.ejs main */
 
 main {
-    padding-top: 5rem;
+    padding-top: 4.50rem;
 }
 
-/* .home-main {  
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-auto-rows: 1fr; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "left-maincontainer right-maincontainer"; 
+.info-main {
+    background-color: #FFDE59;
+    padding: 1rem;
 
-    padding: 0.5rem; 
-}
-  
-.left-maincontainer { 
-    grid-area: left-maincontainer; 
-    margin: 0 auto;
 }
 
-.left-heading {
+.info-main h1 {
     text-align: center;
+    font-size: 2rem;
+    padding: 0.50rem;
+ 
 }
 
-.left-heading button {
-    border: 5px solid rgb(191, 202, 191);
-    border-radius: 16px;
-    width: 150px;
-}
-
-
-.right-maincontainer { 
-    grid-area: right-maincontainer; 
-    margin: 0 auto;
-}
-
-.right-info .right-playground img {
-    width: 350px;
-    height: 350px;
-} */
-
-/* home.ejs about */
-
-.about-home h2{
+.sub-main {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.about-home-info p {
+.sub-main h3 {
     text-align: center;
-    padding: 1rem;
+    font-size: 1.25rem;
+    padding-bottom: 3rem;
+    margin: 0 1rem;
+}
+
+.sub-main-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    padding-bottom: 1.50rem;
+}
+
+/* home.ejs apointment */
+
+.appt-box {
+    background-color: #FFDE59;
+    margin-top: -17px;
+}
+
+form.container {
+    margin-top: -50px;
+    position: relative;
+}
+
+.appt-box .container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: pink;
+    width: 700px;
+}
+  
+.box {
+    flex: 1 1 25%; 
+    padding: 10px;
+}
+
+select#facility {
+    width: 200px;
+}
+
+select#date {
+    width: 200px;
 }
 
 
+.datebox {
+    display: flex;
+    flex-direction: column;
+}
+
+.box .apptbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#appointment {
+    width: 200px;
+    height: 75px;
+    line-height: 5px;
+}
+
+#appointment h1 {
+    font-size: 15px;
+}
+
+#appointment p {
+    font-size: 15px;
+}
+  
+.options-container {
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.options-container input[type="checkbox"] {
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+label.frequency {
+    font-weight: bold;
+    font-size: 20px;
+}
+  
+.options-container label {
+    margin-right: 25px;
+}
+  
+  
+
 
 /* home.ejs services */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+
 
 .services-home h2{
     display: flex;
@@ -102,20 +176,11 @@ main {
 }
 
 
-.card-container {
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-}
-
 .card {
     width: 200px;
     height: 150px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
-    margin: 10px;
-    padding: 10px;
-    display: inline-block;
 }
 
 /* home.ejs contact */
